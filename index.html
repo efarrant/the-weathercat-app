@@ -1,15 +1,260 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <h1>This is a heading</h1>
-  
-    <script src="app.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>⛅ &nbsp;&nbsp; 🐾The WeatherCat🐾 &nbsp;&nbsp; 🐈</title>
+    <link rel="stylesheet" href="src/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/f037981bae.js"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="src/app.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+  <body style="background-image: url('src/images/pawprints.png')">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3"></div>
+        <div class="col-sm-6"><header>The WeatherCat</header></div>
+        <div class="col-sm-3"></div>
+      </div>
+      <div class="row weekdays">
+        <div class="col-3"></div>
+        <div class="col-6">
+          <div class="row g-1 justify-content-center">
+            <div class="col">
+              <div class="card text-info bg-transparent shadow-lg">
+                <div class="card-body p-0">Mon</div>
+                <img
+                  class="card-img-top"
+                  src="src/images/cloudy.png"
+                  alt="Card image cap"
+                />
+              </div>
+            </div>
+            <div class="col">
+              <div class="card text-info bg-transparent shadow-lg">
+                <div class="card-body p-0">Tue</div>
+                <img
+                  class="card-img-top"
+                  src="src/images/sunny.png"
+                  alt="Card image cap"
+                />
+              </div>
+            </div>
+            <div class="col">
+              <div class="card text-info bg-transparent shadow-lg">
+                <div class="card-body p-0">Wed</div>
+                <img
+                  class="card-img-top"
+                  src="src/images/sunny.png"
+                  alt="Card image cap"
+                />
+              </div>
+            </div>
+            <div class="col">
+              <div class="card text-info bg-transparent shadow-lg">
+                <div class="card-body p-0">Thu</div>
+                <img
+                  class="card-img-top"
+                  src="src/images/rain.png"
+                  alt="Card image cap"
+                />
+              </div>
+            </div>
+            <div class="col">
+              <div class="card text-info bg-transparent shadow-lg">
+                <div class="card-body p-0">Fri</div>
+                <img
+                  class="card-img-top"
+                  src="src/images/sunny.png"
+                  alt="Card image cap"
+                />
+              </div>
+            </div>
+            <div class="col">
+              <div class="card text-info bg-transparent shadow-lg">
+                <div class="card-body p-0">Sat</div>
+                <img
+                  class="card-img-top"
+                  src="src/images/storm.png"
+                  alt="Card image cap"
+                />
+              </div>
+            </div>
+            <div class="col">
+              <div class="card text-info bg-transparent shadow-lg">
+                <div class="card-body p-0">Sun</div>
+                <img
+                  class="card-img-top"
+                  src="src/images/cloudy.png"
+                  alt="Card image cap"
+                />
+              </div>
+            </div>
+            <div class="col">
+              <div class="card text-info bg-transparent shadow-lg">
+                <div class="card-body p-0">Mon</div>
+                <img
+                  class="card-img-top"
+                  src="src/images/sunny.png"
+                  alt="Card image cap"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-3"></div>
+      </div>
+
+      <div class="row">
+        <div class="col-3"></div>
+        <div class="col-6">
+          <div
+            class="data"
+            id="backgroundImage"
+            style="background-image: url('src/gifs/window-cat-sunny.gif')"
+          >
+            <form>
+              <div class="row">
+                <div class="col-6"></div>
+                <div class="col-3">
+                  <input
+                    type="text"
+                    placeholder="Enter your city"
+                    id="input-city"
+                  />
+                </div>
+                <div class="col-1">
+                  <input type="submit" value="🔎" id="magnifying-glass" />
+                </div>
+                <div class="col-1">
+                  <img
+                    src="src/images/compass1.png"
+                    width="45vw"
+                    class="compass"
+                  />
+                </div>
+              </div>
+            </form>
+            <div class="row">
+              <div class ="col-2"></div>
+              <div class="col-2">
+                <span class="temperature">12</span>
+              </div>
+              <div class="col-4">
+                <span class="degrees"
+                  ><a class="celsius">°C</a><a class="fahrenheit"> °F</a></span
+                >
+              </div>
+              <div class="col"></div>
+            </div>
+
+            <div class="row">
+              <div class ="col-2"></div>
+              <div class="col">
+                <div class="city-and-country">London, UK</div>
+              </div>
+            </div>
+            <div class="row">
+              <div class ="col-2"></div>
+              <div class="col">
+                <div class="date-today">Monday 10:00</div>
+              </div>
+            </div>
+            <div class="row">
+              <div class ="col-2"></div>
+              <div class="col-5">
+                <span class="weather-condition">Rain</span>
+              </div></div>
+                <div class="row">
+                  <div class="col spacer">hi</div><div>
+                  <div class = "row">
+                      <div class="col-6"></div>
+                        
+                        <div class="col-6">
+                          
+                        <div class="clock-and-text">
+                          <img
+                            src="src/images/clock.png"
+                            alt="clock"
+                            class="clock"
+                          />
+                          <div class="clock-face">:</div>
+              </div></div><br/><br/><br/><br/>
+                        </div>
+                      </div>
+                  <div class = "row">
+                    <div class = "col-1"></div>
+                    <div class = "col">
+              <span class="backgrounds">
+                <button
+                  onclick="document.getElementById('backgroundImage').style.backgroundImage =
+            'url(src/gifs/window-cat-sunny.gif)'"
+                >
+                  Sunny
+                </button>
+                <button
+                  onclick="document.getElementById('backgroundImage').style.backgroundImage =
+            'url(src/gifs/window-cat-windy.gif)'"
+                >
+                  Windy
+                </button>
+                <button
+                  onclick="document.getElementById('backgroundImage').style.backgroundImage =
+            'url(src/gifs/window-cat-rain.gif)'"
+                >
+                  Rain
+                </button>
+                <button
+                  onclick="document.getElementById('backgroundImage').style.backgroundImage =
+            'url(src/gifs/window-cat-thunderstorm.gif)'"
+                >
+                  Storm
+                </button>
+                <button
+                  onclick="document.getElementById('backgroundImage').style.backgroundImage =
+            'url(src/gifs/window-cat-snow.gif)'"
+                >
+                  Snow
+                </button>
+                <button
+                  onclick="document.getElementById('backgroundImage').style.backgroundImage =
+            'url(src/gifs/window-cat-clouds.gif)'"
+                >
+                  Clouds
+                </button>
+                <button
+                  onclick="document.getElementById('backgroundImage').style.backgroundImage =
+            'url(src/gifs/window-cat-night.gif)'"
+                >
+                  Night
+                </button>
+                <br />
+              </span>
+            </div>
+            <div class = "col-1"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

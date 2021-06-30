@@ -1,0 +1,234 @@
+header {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 3vw;
+  font-weight: bolder;
+  opacity: 0.9;
+  display: block;
+  margin: 0 auto;
+  color: #533828;
+}
+.row.weekdays {
+  margin: 10px 0;
+}
+body {
+  background-size: contain;
+  background-position-x: center;
+  background-repeat: no-repeat;
+}
+
+.container {
+  z-index: -4;
+  font-family: "Poppins", sans-serif;
+  margin: 0 200px auto;
+  display: block;
+  text-align: center;
+  background-size: cover;
+}
+style {
+  background-size: cover;
+}
+.container-fluid {
+  display: block;
+  text-align: center;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: lighter;
+  color: #6a512b;
+  font-size: 10px;
+  z-index: 5;
+  max-width: 24%;
+  position: absolute;
+  top: 4vw;
+  left: 38%;
+}
+
+.card {
+  font-size: 0.9vw;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  line-height: 12px;
+  opacity: 0.9;
+  transition: all 200ms ease-in-out;
+  z-index: 10;
+}
+.card:hover {
+  border: #6655;
+}
+.card-img-top {
+  width: 100%;
+  height: 4vw;
+  object-fit: contain;
+}
+img {
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+}
+
+form {
+  top: 10.6vw;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1.2vw;
+  z-index: 99;
+}
+input {
+  border-radius: 8px;
+  border-color: #f8f2da57;
+  border: 2px inset #f8f2da;
+  background: white;
+  opacity: 0.4;
+  max-width: 10vw;
+
+  z-index: 99;
+}
+br {
+  line-height: 1vw;
+}
+#magnifying-glass {
+  opacity: 0.7;
+  border-radius: 33px;
+  border: 0.5px inset #f8f2da;
+  padding: 1px 2px;
+}
+
+.window-cat {
+  padding: 0px 10px;
+  z-index: 2;
+}
+.image-info {
+  text-align: center;
+  padding-top: 5px;
+  position: relative;
+}
+.fahrenheit {
+  font-size: 1.5vw;
+  color: white;
+  opacity: 0.7;
+  text-decoration: none;
+  display: inline;
+}
+.celsius {
+  text-decoration: none;
+  color: white;
+  display: inline;
+}
+.data {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  background-size: contain;
+  background-position-x: center;
+  background-repeat: no-repeat;
+  color: white;
+  opacity: 0.7;
+  text-align: left;
+  padding-top: 1vw;
+}
+.temperature {
+  font-size: 6.5vw;
+  line-height: 90%;
+  margin-top: none;
+}
+.degrees {
+  font-size: 1.5vw;
+  position: relative;
+}
+.fahrenheit:hover {
+  color: yellow;
+  opacity: 0.9;
+}
+.fahrenheit:active {
+  color: yellow;
+}
+.celsius:hover {
+  color: yellow;
+  opacity: 0.9;
+}
+.celsius:active {
+  color: yellow;
+}
+.city-and-country {
+  font-size: 2vw;
+}
+.date-today {
+  font-size: 1.3vw;
+}
+.weather-condition {
+  font-size: 1.3vw;
+}
+.window-cat {
+  z-index: -3;
+  padding-top: 1.4vw;
+}
+.search {
+  border: 1px solid white;
+  border-radius: 20px;
+  background: #6a512b;
+  color: white;
+  z-index: 10;
+}
+.spacer {
+  color: white;
+  opacity: 0.01;
+  font-size: 5.5vw;
+}
+.clock-and-text {
+  position: relative;
+  display: inline;
+  z-index: 2;
+}
+.clock {
+  position: absolute;
+  max-width: 5.2vw;
+  z-index: 3;
+}
+.clock-face {
+  position: absolute;
+  color: black;
+  display: block;
+  margin: 0 auto;
+  top: 0.9vw;
+  left: 1.2vw;
+  z-index: 4;
+  max-width: 64px;
+  font-family: "Orbitron", sans-serif;
+  font-size: 1vw;
+  line-height: 23px;
+}
+.flowers {
+  max-width: 5vw;
+  z-index: 3;
+
+  bottom: 25%;
+}
+.compass {
+  display: block;
+  margin: 0 auto;
+
+  z-index: 99;
+  max-width: 2vw;
+}
+.compass:hover {
+  cursor: pointer;
+}
+
+.backgrounds {
+  display: inline-block;
+  margin: 0 auto;
+  max-width: 100%;
+
+  padding: 0px;
+  z-index: 8;
+  font-size: 0.8vw;
+}
+button {
+  z-index: 99;
+  padding: 0.4vw 0.55vw;
+  display: inline;
+  margin: 0 auto;
+  background: rgb(247, 235, 182);
+  border: 1px solid white;
+  color: brown;
+  font-weight: bold;
+}
