@@ -173,28 +173,24 @@ br {
   opacity: 0.01;
   font-size: 5.5vw;
 }
-.clock-and-text {
-  position: relative;
-  display: inline;
-  z-index: 2;
-}
-.clock {
-  position: absolute;
-  max-width: 5.2vw;
-  z-index: 3;
-}
+
+
 .clock-face {
-  position: absolute;
+  
   color: black;
   display: block;
   margin: 0 auto;
-  top: 0.9vw;
-  left: 1.2vw;
+  background-size: contain;
+  background-position-x: center;
+  background-repeat: no-repeat;
+  text-align: center;
   z-index: 4;
-  max-width: 64px;
+  padding: 0.95vw 0.5vw 1.5vw 1vw;
+  font-size: 0.7vw;
   font-family: "Orbitron", sans-serif;
-  font-size: 1vw;
-  line-height: 23px;
+  
+ 
+  
 }
 .flowers {
   max-width: 5vw;
@@ -203,7 +199,7 @@ br {
   bottom: 25%;
 }
 .compass {
-  display: block;
+  display: inline;
   margin: 0 auto;
 
   z-index: 99;
