@@ -52,13 +52,14 @@ style {
   opacity: 0.9;
   transition: all 200ms ease-in-out;
   z-index: 10;
+  
 }
 .card:hover {
   border: #6655;
 }
 .card-img-top {
-  width: 100%;
-  height: 4vw;
+  width: 80%;
+  height: 3vw;
   object-fit: contain;
 }
 img {
@@ -124,6 +125,9 @@ br {
   opacity: 0.7;
   text-align: left;
   padding-top: 1vw;
+  background-color:rgb(156, 104, 83,0.5);
+  border-radius: 2%;
+  border-bottom: 1vw solid rgb(156, 104, 83,0.05);
 }
 .temperature {
   font-size: 6.5vw;
@@ -220,11 +224,12 @@ br {
 }
 button {
   z-index: 99;
-  padding: 0.4vw 0.55vw;
+  padding: 0.3vw 0.3vw;
   display: inline;
   margin: 0 auto;
-  background: rgb(247, 235, 182);
-  border: 1px solid white;
-  color: brown;
+  background:#F8BD53;
+  border: 1px solid #654C3E;
+  color: #533828;
   font-weight: bold;
+  border-radius: 15%;
 }
