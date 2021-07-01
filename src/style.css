@@ -177,7 +177,7 @@ br {
 
 .clock-face {
   
-  color: black;
+  color: rgb(1, 124, 161);
   display: block;
   margin: 0 auto;
   background-size: contain;
