@@ -77,6 +77,7 @@ form {
 input {
   border-radius: 8px;
   border-color: #f8f2da57;
+  font-family: "Poppins", sans-serif;
   border: 2px inset #f8f2da;
   background: white;
   opacity: 0.4;
