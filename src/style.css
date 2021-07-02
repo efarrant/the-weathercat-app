@@ -70,8 +70,8 @@ img {
 
 form {
   top: 10.6vw;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 1.2vw;
+  font-family: "Poppins", sans-serif;
+  font-size: 1vw;
   z-index: 99;
 }
 input {
@@ -178,7 +178,9 @@ br {
   font-size: 5.5vw;
 }
 
-
+.coded-by {
+  font-size: 1.5vw;
+}
 
 .flowers {
   max-width: 5vw;
@@ -202,7 +204,8 @@ br {
   margin: 0 auto;
   max-width: 100%;
 
-  padding: 0px;
+
+  padding-left: 2vw;
   z-index: 8;
   font-size: 0.8vw;
 }
