@@ -1,14 +1,30 @@
 function formatDate(date) {
   let daysOfWeek = [
-    "Sunday",
-    "Monday",
-    "Tuesday",
-    "Wednesday",
-    "Thursday",
-    "Friday",
-    "Saturday",
+    "Sun",
+    "Mon",
+    "Tue",
+    "Wed",
+    "Thu",
+    "Fri",
+    "Sat",
+  ];
+  let monthsOfYear = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
   ];
   let day = daysOfWeek[date.getDay()];
+  let dateNumber = date.getDate();
+  let month = monthsOfYear[date.getMonth()];
   let hours = date.getHours();
   let minutes = date.getMinutes();
   if (hours < 10) {
@@ -17,7 +33,7 @@ function formatDate(date) {
   if (minutes < 10) {
     minutes = "0" + minutes;
   }
-  let formattedDate = `${day}, ${hours} : ${minutes}`;
+  let formattedDate = `${day}, ${dateNumber} ${month} ${hours} : ${minutes}`;
   return formattedDate;
 }
 
@@ -106,6 +122,8 @@ celsius.addEventListener("click", celsiusConverter);
 if (hours < 7 || hours > 20) {
   document.getElementById("backgroundImage").style.backgroundImage = "url(src/gifs/window-cat-night.gif)";
 }
+
+document.addEventListener("DOMContentLoaded", getCurrentPosition());
 
 function getCurrentPosition() {
   navigator.geolocation.getCurrentPosition(logLongitudeAndLatitude);

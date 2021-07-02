@@ -95,26 +95,21 @@ br {
   padding: 1px 1.7px;
 }
 
-.window-cat {
-  padding: 0px 10px;
-  z-index: 2;
-}
-.image-info {
-  text-align: center;
-  padding-top: 5px;
-  position: relative;
-}
+
+
 .fahrenheit {
   font-size: 1.5vw;
   color: white;
   opacity: 0.7;
   text-decoration: none;
   display: inline;
+  text-shadow: -1px 0 rgb(143, 139, 139), 0 1px rgb(143, 139, 139), 0 -1px rgb(143, 139, 139);
 }
 .celsius {
   text-decoration: none;
   color: white;
   display: inline;
+  text-shadow: -1px 0 rgb(87, 86, 86), 0 1px rgb(87, 86, 86), 1px 0 rgb(87, 86, 86), 0 -1px rgb(87, 86, 86);
 }
 .data {
   font-family: "Poppins", sans-serif;
@@ -133,11 +128,12 @@ br {
 .temperature {
   font-size: 6.5vw;
   line-height: 90%;
-  margin-top: none;
+  text-shadow: -1px 0 rgb(143, 139, 139), 0 1px rgb(143, 139, 139), 0 -1px rgb(143, 139, 139);
 }
 .degrees {
   font-size: 1.5vw;
   position: relative;
+  
 }
 .fahrenheit:hover {
   color: yellow;
@@ -155,12 +151,16 @@ br {
 }
 .city-and-country {
   font-size: 2vw;
+  text-shadow: -1px 0 rgb(87, 86, 86), 0 1px rgb(87, 86, 86), 1px 0 rgb(87, 86, 86), 0 -1px rgb(87, 86, 86);
 }
 .date-today {
   font-size: 1.3vw;
+  text-shadow: -1px 0 rgb(87, 86, 86), 0 1px rgb(87, 86, 86), 1px 0 rgb(87, 86, 86), 0 -1px rgb(87, 86, 86);
 }
+
 .weather-condition {
   font-size: 1.3vw;
+  text-shadow: -1px 0 rgb(87, 86, 86), 0 1px rgb(87, 86, 86), 1px 0 rgb(87, 86, 86), 0 -1px rgb(87, 86, 86);
 }
 .window-cat {
   z-index: -3;
