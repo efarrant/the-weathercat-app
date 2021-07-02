@@ -92,8 +92,7 @@ let minutes = now.getMinutes();
 if (minutes < 10) {
   minutes = `0${minutes}`;
 }
-let clockFace = document.querySelector(".clock-face");
-clockFace.innerHTML = `${hours}&nbsp:&nbsp${minutes}`;
+
 
 let search = document.querySelector("#magnifying-glass");
 search.addEventListener("click", displayCity);

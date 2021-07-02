@@ -179,23 +179,7 @@ br {
 }
 
 
-.clock-face {
-  
-  color: rgb(1, 124, 161);
-  display: block;
-  margin: 0 auto;
-  background-size: contain;
-  background-position-x: center;
-  background-repeat: no-repeat;
-  text-align: center;
-  z-index: 4;
-  padding: 0.85vw 0.5vw 1.5vw 1vw;
-  font-size: 0.6vw;
-  font-family: "Orbitron", sans-serif;
-  overflow: hidden;
- 
-  
-}
+
 .flowers {
   max-width: 5vw;
   z-index: 3;
