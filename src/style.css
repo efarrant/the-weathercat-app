@@ -1,19 +1,14 @@
-header {
-  text-align: center;
-  font-family: "Poppins", sans-serif;
-  font-size: 4vw;
-  font-weight: bolder;
-  opacity: 0.9;
-  display: block;
-  margin: 0.8vw auto;
-  color: rgba(0, 0, 0, 0.377);
-
+.heading {
+  max-width: 70%;
+  padding-bottom: 1.2vw;
 }
-.header-background {
-  background: rgb(255, 255, 255, 0.3)
+.white-background {
+  background-size: contain;
+  overflow: hidden;
 }
 .row.weekdays {
-  margin: 0px 0;
+  margin: none;
+  padding: none;
   border-radius: 3px;
 }
 body {
@@ -53,7 +48,7 @@ style {
   font-size: 0.9vw;
   font-weight: bold;
   font-family: "Poppins", sans-serif;
-  line-height: 1.6vw;
+  line-height: 1.4vw;
   
   transition: all 200ms ease-in-out;
   z-index: 10;
@@ -61,7 +56,7 @@ style {
   border-radius: 3px;
 }
 .card-body {
-  background: white;
+  
   border-radius: 3px;
 }
 .card:hover {
@@ -71,7 +66,6 @@ style {
   width: 80%;
   height: 3vw;
   object-fit: contain;
-  background: white;
 }
 img {
   display: block;
@@ -132,9 +126,9 @@ br {
   
   text-align: left;
   padding-top: 1vw;
-  
+  boder: 
   border-radius: 2%;
-  border-bottom: 1vw solid rgb(155, 153, 153,0.05)
+  
 }
 .temperature {
   font-size: 6.5vw;
