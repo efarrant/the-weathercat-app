@@ -1,15 +1,17 @@
 header {
   text-align: center;
   font-family: "Poppins", sans-serif;
-  font-size: 3vw;
+  font-size: 4vw;
   font-weight: bolder;
   opacity: 0.9;
   display: block;
-  margin: 0 auto;
-  color: #533828;
+  margin: 0.8vw auto;
+  color: rgba(0, 0, 0, 0.377);
+
 }
 .row.weekdays {
-  margin: 10px 0;
+  margin: 0px 0;
+  border-radius: 3px;
 }
 body {
   background-size: contain;
@@ -48,11 +50,16 @@ style {
   font-size: 0.9vw;
   font-weight: bold;
   font-family: "Poppins", sans-serif;
-  line-height: 12px;
-  opacity: 0.9;
+  line-height: 1.7vw;
+  
   transition: all 200ms ease-in-out;
   z-index: 10;
-  
+  background: white;
+  border-radius: 3px;
+}
+.card-body {
+  background: white;
+  border-radius: 3px;
 }
 .card:hover {
   border: #6655;
@@ -61,6 +68,7 @@ style {
   width: 80%;
   height: 3vw;
   object-fit: contain;
+  background: white;
 }
 img {
   display: block;
@@ -118,10 +126,10 @@ br {
   background-position-x: center;
   background-repeat: no-repeat;
   color: white;
-  opacity: 0.7;
+  
   text-align: left;
   padding-top: 1vw;
-  background-color:rgb(155, 153, 153, 0.5);
+  
   border-radius: 2%;
   border-bottom: 1vw solid rgb(155, 153, 153,0.05)
 }
@@ -162,10 +170,7 @@ br {
   font-size: 1.3vw;
   text-shadow: -1px 0 rgb(87, 86, 86, 0.2), 0 1px rgb(87, 86, 86, 0.2), 1px 0 rgb(87, 86, 86, 0.2), 0 -1px rgb(87, 86, 86, 0.2);
 }
-.window-cat {
-  z-index: -3;
-  padding-top: 1.4vw;
-}
+
 .search {
   border: 1px solid white;
   border-radius: 20px;
@@ -183,12 +188,6 @@ br {
   font-size: 1vw;
 }
 
-.flowers {
-  max-width: 5vw;
-  z-index: 3;
-
-  bottom: 25%;
-}
 .compass {
   display: inline;
   margin: 0 auto;
@@ -204,20 +203,37 @@ br {
   display: inline-block;
   margin: 0 auto;
   max-width: 100%;
-
-
-  padding-left: 2vw;
-  z-index: 8;
   font-size: 0.8vw;
+
+  
+  z-index: 8;
+  object-fit: contain;
+  opacity: none;
 }
 button {
   z-index: 99;
-  padding: 0.3vw 0.3vw;
-  display: inline;
-  margin: 0 auto;
-  background:rgb(218, 216, 216);
-  border: 1px solid rgb(155, 153, 153, 0.9);
+object-fit: contain;
+  margin: 0px auto;
+  background: none;
+  border: none;
   color: #533828;
   font-weight: bold;
   border-radius: 20vw;
+  text-decoration: underline;
+  
+  padding-left: none;
+  padding-right: none;
+}
+.weather-app {
+  
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 3%;
+  z-index: -99;
+  background-repeat:inherit;
+}
+.no-art {
+  text-decoration: none;
+  background-color:rgb(155, 153, 153, 0.5);
 }
