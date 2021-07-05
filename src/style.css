@@ -1,5 +1,5 @@
 .heading {
-  max-width: 70%;
+  max-width: 80%;
   padding-bottom: 1.2vw;
 }
 .white-background {
@@ -125,8 +125,7 @@ br {
   color: white;
   
   text-align: left;
-  padding-top: 1vw;
-  boder: 
+  padding-top: 1vw; 
   border-radius: 2%;
   
 }
