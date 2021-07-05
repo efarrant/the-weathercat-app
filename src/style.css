@@ -1,6 +1,6 @@
 .heading {
-  max-width: 80%;
-  padding-bottom: 1.1vw;
+  max-width: 66.5%;
+  padding-bottom: 1vw;
 }
 .white-background {
   background-size: contain;
@@ -157,7 +157,7 @@ br {
   color: yellow;
 }
 .city-and-country {
-  font-size: 2.3vw;
+  font-size: 2.2vw;
   text-shadow: -1px 0 rgb(87, 86, 86, 0.2), 0 1px rgb(87, 86, 86, 0.2), 1px 0 rgb(87, 86, 86, 0.2), 0 -1px rgb(87, 86, 86, 0.2);
  
 }
@@ -186,7 +186,7 @@ padding: 0.2vw 0;
 }
 
 .coded-by {
-  font-size: 1vw;
+  font-size: 0.9vw;
 }
 
 .compass {
