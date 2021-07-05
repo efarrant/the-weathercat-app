@@ -131,12 +131,15 @@ br {
 }
 .temperature {
   font-size: 6.5vw;
+  text-align: right;
   line-height: 90%;
   text-shadow: -1px 0 rgb(143, 139, 139,0.4), 0 1px rgb(143, 139, 139,0.4), 0 -1px rgb(143, 139, 139,0.4);
 }
 .degrees {
   font-size: 1.5vw;
   position: relative;
+  padding-left: none;
+  margin-right: none;
   
 }
 .fahrenheit:hover {
