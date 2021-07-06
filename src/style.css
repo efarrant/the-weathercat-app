@@ -130,7 +130,7 @@ br {
   
 }
 .temperature {
-  font-size: 6.5vw;
+  font-size: 5vw;
   text-align: right;
   line-height: 90%;
   text-shadow: -1px 0 rgb(143, 139, 139,0.4), 0 1px rgb(143, 139, 139,0.4), 0 -1px rgb(143, 139, 139,0.4);
@@ -157,12 +157,13 @@ br {
   color: yellow;
 }
 .city-and-country {
-  font-size: 2.2vw;
+  font-size: 2.1vw;
   text-shadow: -1px 0 rgb(87, 86, 86, 0.2), 0 1px rgb(87, 86, 86, 0.2), 1px 0 rgb(87, 86, 86, 0.2), 0 -1px rgb(87, 86, 86, 0.2);
  padding-left: 0.4vw;
+ padding-top: none;
 }
 .date-today {
-  font-size: 1.3vw;
+  font-size: 1vw;
   text-shadow: -1px 0 rgb(87, 86, 86, 0.2), 0 1px rgb(87, 86, 86, 0.2), 1px 0 rgb(87, 86, 86, 0.2), 0 -1px rgb(87, 86, 86, 0.2);
 padding-left: 0.4vw;
 }
@@ -171,8 +172,12 @@ padding-left: 0.4vw;
   font-size: 1.3vw;
   text-shadow: -1px 0 rgb(87, 86, 86, 0.2), 0 1px rgb(87, 86, 86, 0.2), 1px 0 rgb(87, 86, 86, 0.2), 0 -1px rgb(87, 86, 86, 0.2);
 padding-left: 0.4vw;
+line-height: 0.5vw;
 }
-
+#icon {
+  max-width: 2.7vw;
+  display: inline;
+}
 .search {
   border: 1px solid white;
   border-radius: 20px;

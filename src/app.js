@@ -1,13 +1,6 @@
-function formatDate(date) {
-  let daysOfWeek = [
-    "Sun",
-    "Mon",
-    "Tue",
-    "Wed",
-    "Thu",
-    "Fri",
-    "Sat",
-  ];
+function formatDate(timestamp) {
+  let date = new Date(timestamp);
+  let daysOfWeek = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
   let monthsOfYear = [
     "January",
     "February",
@@ -33,8 +26,7 @@ function formatDate(date) {
   if (minutes < 10) {
     minutes = "0" + minutes;
   }
-  let formattedDate = `${day}, ${dateNumber} ${month} ${hours} : ${minutes}`;
-  return formattedDate;
+  return `${day}, ${dateNumber} ${month} ${hours} : ${minutes}`;
 }
 
 let apiKey = "4d25fa39d39f9d90630ef9306854c84f";
@@ -54,8 +46,15 @@ function displayCity(event) {
     let temperatureElement = document.querySelector(".temperature");
     let weatherDescriptionElement =
       document.querySelector(".weather-condition");
+    let dateElement = document.querySelector("#date");
+    let iconElement = document.querySelector("#icon");
     temperatureElement.innerHTML = temperatureNumber;
     weatherDescriptionElement.innerHTML = weatherDescription;
+    dateElement.innerHTML = formatDate(response.data.dt * 1000);
+    iconElement.setAttribute(
+      "src",
+      `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+    );
     if (hours > 7 && hours < 23) {
       if (weatherDescriptionElement.innerHTML.includes("ain")) {
         document.getElementById("backgroundImage").style.backgroundImage =
@@ -109,7 +108,6 @@ if (minutes < 10) {
   minutes = `0${minutes}`;
 }
 
-
 let search = document.querySelector("#magnifying-glass");
 search.addEventListener("click", displayCity);
 
@@ -120,7 +118,8 @@ let celsius = document.querySelector(".celsius");
 celsius.addEventListener("click", celsiusConverter);
 
 if (hours < 7 || hours > 20) {
-  document.getElementById("backgroundImage").style.backgroundImage = "url(src/gifs/window-cat-night.gif)";
+  document.getElementById("backgroundImage").style.backgroundImage =
+    "url(src/gifs/window-cat-night.gif)";
 }
 
 document.addEventListener("DOMContentLoaded", getCurrentPosition());
@@ -140,16 +139,24 @@ function showLocation(location) {
   cityAndCountry.innerHTML = `${location.data.name}, ${location.data.sys.country}`;
   let weatherCondition = document.querySelector(".weather-condition");
   weatherCondition.innerHTML = `${location.data.weather[0].description}`;
+  let dateElement = document.querySelector("#date");
+  let iconElement = document.querySelector("#icon")
+  dateElement.innerHTML = formatDate(location.data.dt * 1000);
+  iconElement.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${location.data.weather[0].icon}@2x.png`
+  );
+  iconElement.setAttribute("alt",response.data.weather[0].description);
   if (hours < 7 || hours > 20) {
     document.getElementById("backgroundImage").style.backgroundImage =
       "url(src/gifs/window-cat-night.gif)";
   } else if (weatherCondition.innerHTML.includes("ain")) {
-          document.getElementById("backgroundImage").style.backgroundImage =
-            "url(src/gifs/window-cat-rain.gif)";
-      } else if (weatherCondition.innerHTML.includes("cloud")) {
-        document.getElementById("backgroundImage").style.backgroundImage =
-          "url(src/gifs/window-cat-clouds.gif)";
-      }
+    document.getElementById("backgroundImage").style.backgroundImage =
+      "url(src/gifs/window-cat-rain.gif)";
+  } else if (weatherCondition.innerHTML.includes("cloud")) {
+    document.getElementById("backgroundImage").style.backgroundImage =
+      "url(src/gifs/window-cat-clouds.gif)";
+  }
 }
 
 let geolocationButton = document.querySelector(".compass");
