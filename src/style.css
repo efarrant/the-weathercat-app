@@ -159,17 +159,18 @@ br {
 .city-and-country {
   font-size: 2.2vw;
   text-shadow: -1px 0 rgb(87, 86, 86, 0.2), 0 1px rgb(87, 86, 86, 0.2), 1px 0 rgb(87, 86, 86, 0.2), 0 -1px rgb(87, 86, 86, 0.2);
- 
+ padding-left: 0.4vw;
 }
 .date-today {
   font-size: 1.3vw;
   text-shadow: -1px 0 rgb(87, 86, 86, 0.2), 0 1px rgb(87, 86, 86, 0.2), 1px 0 rgb(87, 86, 86, 0.2), 0 -1px rgb(87, 86, 86, 0.2);
-padding: 0.2vw 0;
+padding-left: 0.4vw;
 }
 
 .weather-condition {
   font-size: 1.3vw;
   text-shadow: -1px 0 rgb(87, 86, 86, 0.2), 0 1px rgb(87, 86, 86, 0.2), 1px 0 rgb(87, 86, 86, 0.2), 0 -1px rgb(87, 86, 86, 0.2);
+padding-left: 0.4vw;
 }
 
 .search {
@@ -186,7 +187,7 @@ padding: 0.2vw 0;
 }
 
 .coded-by {
-  font-size: 0.9vw;
+  font-size: 0.85vw;
 }
 
 .compass {
@@ -239,4 +240,8 @@ object-fit: contain;
 .no-art {
   text-decoration: none;
   background-color:none;
+}
+.weather-icon {
+  display:block;
+  margin: 0 auto;
 }
