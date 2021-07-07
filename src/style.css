@@ -123,14 +123,14 @@ br {
   background-position-x: center;
   background-repeat: no-repeat;
   color: white;
-  text-transform: capitalize;
+  
   text-align: left;
   padding-top: 1vw; 
   border-radius: 2%;
   
 }
 .temperature {
-  font-size: 5vw;
+  font-size: 6vw;
   text-align: right;
   line-height: 90%;
   text-shadow: -1px 0 rgb(143, 139, 139,0.4), 0 1px rgb(143, 139, 139,0.4), 0 -1px rgb(143, 139, 139,0.4);
@@ -161,11 +161,13 @@ br {
   text-shadow: -1px 0 rgb(87, 86, 86, 0.2), 0 1px rgb(87, 86, 86, 0.2), 1px 0 rgb(87, 86, 86, 0.2), 0 -1px rgb(87, 86, 86, 0.2);
  padding-left: 0.4vw;
  padding-top: none;
+ text-transform: capitalize;
 }
 .date-today {
   font-size: 1vw;
   text-shadow: -1px 0 rgb(87, 86, 86, 0.2), 0 1px rgb(87, 86, 86, 0.2), 1px 0 rgb(87, 86, 86, 0.2), 0 -1px rgb(87, 86, 86, 0.2);
 padding-left: 0.4vw;
+padding-bottom: 0.5vw;
 }
 
 .weather-condition {
@@ -173,6 +175,10 @@ padding-left: 0.4vw;
   text-shadow: -1px 0 rgb(87, 86, 86, 0.2), 0 1px rgb(87, 86, 86, 0.2), 1px 0 rgb(87, 86, 86, 0.2), 0 -1px rgb(87, 86, 86, 0.2);
 padding-left: 0.4vw;
 line-height: 0.5vw;
+display: inline-block;
+}
+.weather-condition:first-letter {
+  text-transform: capitalize;
 }
 #icon {
   max-width: 2.7vw;
