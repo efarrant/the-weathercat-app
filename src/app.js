@@ -85,6 +85,9 @@ function fahrenheitConverter() {
   tempElement.innerHTML = Math.round((temperature * 9) / 5 + 32);
   let fahrenheitButton = document.querySelector(".fahrenheit");
   fahrenheitButton.style.color = "yellow";
+  fahrenheitButton.disabled = true; 
+  let celsiusButton = document.querySelector(".celsius");
+  celsiusButton.disabled = false;
 }
 
 function celsiusConverter() {
@@ -93,6 +96,9 @@ function celsiusConverter() {
   tempElement.innerHTML = Math.round(((temperature - 32) * 5) / 9);
   let celsiusButton = document.querySelector(".celsius");
   celsiusButton.style.color = "yellow";
+  celsiusButton.disabled = true;
+  let fahrenheitButton = document.querySelector(".fahrenheit");
+  fahrenheitButton.disabled = false; 
 }
 
 let now = new Date();
@@ -115,6 +121,7 @@ let fahrenheit = document.querySelector(".fahrenheit");
 fahrenheit.addEventListener("click", fahrenheitConverter);
 
 let celsius = document.querySelector(".celsius");
+celsius.disabled = true;
 celsius.addEventListener("click", celsiusConverter);
 
 if (hours < 7 || hours > 21) {
