@@ -130,9 +130,9 @@ br {
   
 }
 .temperature {
-  font-size: 6vw;
+  font-size: 5.7vw;
   text-align: right;
-  line-height: 90%;
+  line-height: 85%;
   text-shadow: -1px 0 rgb(143, 139, 139,0.4), 0 1px rgb(143, 139, 139,0.4), 0 -1px rgb(143, 139, 139,0.4);
 }
 .degrees {
@@ -157,24 +157,24 @@ br {
   color: yellow;
 }
 .city-and-country {
-  font-size: 2.1vw;
+  font-size: 2vw;
   text-shadow: -1px 0 rgb(87, 86, 86, 0.2), 0 1px rgb(87, 86, 86, 0.2), 1px 0 rgb(87, 86, 86, 0.2), 0 -1px rgb(87, 86, 86, 0.2);
  padding-left: 0.4vw;
  padding-top: none;
  text-transform: capitalize;
+ line-height: 95%;
 }
 .date-today {
   font-size: 1vw;
   text-shadow: -1px 0 rgb(87, 86, 86, 0.2), 0 1px rgb(87, 86, 86, 0.2), 1px 0 rgb(87, 86, 86, 0.2), 0 -1px rgb(87, 86, 86, 0.2);
 padding-left: 0.4vw;
-padding-bottom: 0.5vw;
 }
 
 .weather-condition {
-  font-size: 1.3vw;
+  font-size: 1.2vw;
   text-shadow: -1px 0 rgb(87, 86, 86, 0.2), 0 1px rgb(87, 86, 86, 0.2), 1px 0 rgb(87, 86, 86, 0.2), 0 -1px rgb(87, 86, 86, 0.2);
 padding-left: 0.4vw;
-line-height: 0.5vw;
+line-height: 40%;
 display: inline-block;
 }
 .weather-condition:first-letter {
