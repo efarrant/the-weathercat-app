@@ -43,13 +43,19 @@ function displayCity(event) {
   function showTemperature(response) {
     let temperatureNumber = Math.round(response.data.main.temp);
     let weatherDescription = response.data.weather[0].description;
+    let windSpeed = Math.round(response.data.wind.speed);
+    let humidity = response.data.main.humidity;
     let temperatureElement = document.querySelector(".temperature");
     let weatherDescriptionElement =
       document.querySelector(".weather-condition");
     let dateElement = document.querySelector("#date");
     let iconElement = document.querySelector("#icon");
+    let windElement = document.querySelector("#windspeed");
+    let humidityElement = document.querySelector("#humidity");
     temperatureElement.innerHTML = temperatureNumber;
     weatherDescriptionElement.innerHTML = weatherDescription;
+    windElement.innerHTML = windSpeed;
+    humidityElement.innerHTML = humidity;
     dateElement.innerHTML = formatDate(response.data.dt * 1000);
     iconElement.setAttribute(
       "src",
@@ -146,6 +152,12 @@ function showLocation(location) {
   cityAndCountry.innerHTML = `${location.data.name}, ${location.data.sys.country}`;
   let weatherCondition = document.querySelector(".weather-condition");
   weatherCondition.innerHTML = `${location.data.weather[0].description}`;
+  let windElement = document.querySelector("#windspeed");
+  let windSpeed = Math.round(location.data.wind.speed);
+  windElement.innerHTML = windSpeed;
+  let humidityElement = document.querySelector("#humidity");
+  let humidity = location.data.main.humidity;
+humidityElement.innerHTML = humidity;
   let dateElement = document.querySelector("#date");
   let iconElement = document.querySelector("#icon")
   dateElement.innerHTML = formatDate(location.data.dt * 1000);
