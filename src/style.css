@@ -93,6 +93,10 @@ input {
 br {
   line-height: 1vw;
 }
+button {
+  background-color:rgba(255, 247, 247, 0.3);
+  border-radius: 1px solid rgba(255, 247, 247, 0.3);
+}
 #magnifying-glass {
   opacity: 0.7;
   border-radius: 33px;
@@ -225,7 +229,12 @@ display: inline-block;
 .extra-data {
   font-size: 1vw;
 }
-button {
+.extra-data-decoration {
+  border: 1px solid #0dcaf0;
+  padding: 0.2vw;
+}
+
+.change-background {
   z-index: 99;
 object-fit: contain;
   margin: 0px auto;
