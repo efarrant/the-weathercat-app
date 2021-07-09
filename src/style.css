@@ -94,8 +94,10 @@ br {
   line-height: 1vw;
 }
 button {
-  background-color:rgba(255, 247, 247, 0.3);
-  border-radius: 1px solid rgba(255, 247, 247, 0.3);
+  background-color:rgba(172, 172, 172, 0.2);
+  border-radius: 1vw solid rgba(172, 172, 172, 0.2);
+  box-sizing:unset;
+  
 }
 #magnifying-glass {
   opacity: 0.7;
@@ -230,8 +232,11 @@ display: inline-block;
   font-size: 1vw;
 }
 .extra-data-decoration {
-  border: 1px solid #0dcaf0;
-  
+  border: 1px solid rgba(83, 83, 83, 0.2);
+  color: #0dcaf0;
+  padding: 0.5vw 1vw;
+  font-weight: bold;
+  border-radius: 1vw;
 }
 
 .change-background {
@@ -240,11 +245,11 @@ object-fit: contain;
   margin: 0px auto;
   background: none;
   border: none;
-  color: #533828;
+  color: white;
   font-weight: bold;
   border-radius: 20vw;
   text-decoration: underline;
-  background-color:rgb(155, 153, 153, 0.2);
+  background-color:rgba(83, 83, 83, 0.4);
   
   padding-left: none;
   padding-right: none;
