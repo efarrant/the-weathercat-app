@@ -229,14 +229,16 @@ display: inline-block;
 }
 
 .extra-data {
-  font-size: 1vw;
+  font-size: 0.9vw;
+  object-fit: contain;
 }
 .extra-data-decoration {
   border: 1px solid rgba(83, 83, 83, 0.2);
   color: #0dcaf0;
-  padding: 0.5vw 1vw;
+  padding: 0.4vw 0.8vw;
   font-weight: bold;
   border-radius: 1vw;
+  margin: none;
 }
 
 .change-background {
@@ -266,6 +268,8 @@ object-fit: contain;
 .no-art {
   text-decoration: none;
   background-color:none;
+  font-weight: bold;
+  font-size: 1vw;
 }
 .weather-icon {
   display:block;
