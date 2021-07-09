@@ -217,12 +217,13 @@ display: inline-block;
   margin: 0 auto;
   max-width: 100%;
   font-size: 0.8vw;
-  
-
-  
   z-index: 8;
   object-fit: contain;
   opacity: none;
+}
+
+.extra-data {
+  font-size: 1vw;
 }
 button {
   z-index: 99;
