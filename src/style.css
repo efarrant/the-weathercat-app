@@ -199,8 +199,8 @@ display: inline-block;
 }
 .spacer {
   color: white;
-  opacity: 0.01;
-  font-size: 5.5vw;
+  opacity: 0.9;
+  font-size: 0.9vw;
 }
 
 .coded-by {
@@ -229,16 +229,17 @@ display: inline-block;
 }
 
 .extra-data {
-  font-size: 0.9vw;
+  font-size: 0.4vw;
   object-fit: contain;
 }
 .extra-data-decoration {
-  border: 1px solid rgba(83, 83, 83, 0.2);
-  color: #0dcaf0;
-  padding: 0.4vw 0.8vw;
+  
+  color: white;
+  padding: 0vw 0vw;
   font-weight: bold;
-  border-radius: 1vw;
   margin: none;
+  text-shadow: -1px 0 rgb(143, 139, 139, 0.2), 0 1px rgb(143, 139, 139, 0.2), 0 -1px rgb(143, 139, 139,0.2);
+  background: rgba(0, 0, 0, 0.2)
 }
 
 .change-background {
