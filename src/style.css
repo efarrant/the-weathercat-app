@@ -242,10 +242,10 @@ display: inline-block;
   background: rgba(0, 0, 0, 0.2)
 }
 .extra-padding {
-  margin-top: 6vw;
+  margin-top: 5vw;
 }
 .spacing {
-  margin-bottom: 1.2vw;
+  margin-bottom: 1.5vw;
 }
 .change-background {
   z-index: 99;
