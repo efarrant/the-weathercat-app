@@ -74,7 +74,7 @@ img {
 }
 
 form {
-  top: 10.6vw;
+  margin-top: 1vw;
   font-family: "Poppins", sans-serif;
   font-size: 1vw;
   z-index: 99;
@@ -242,7 +242,10 @@ display: inline-block;
   background: rgba(0, 0, 0, 0.2)
 }
 .extra-padding {
-  padding-top: 3vw;
+  margin-top: 7vw;
+}
+.spacing {
+  margin-bottom: 0.5vw;
 }
 .change-background {
   z-index: 99;
