@@ -235,7 +235,7 @@ display: inline-block;
 .extra-data-decoration {
   
   color: white;
-  padding: 0vw 0vw;
+  padding: 0vw 0vw 0vw 1vw;
   font-weight: bold;
   margin: none;
   text-shadow: -1px 0 rgb(143, 139, 139, 0.2), 0 1px rgb(143, 139, 139, 0.2), 0 -1px rgb(143, 139, 139,0.2);
