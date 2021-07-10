@@ -64,7 +64,7 @@ style {
 }
 .card-img-top {
   width: 80%;
-  height: 3vw;
+  height: 2.5vw;
   object-fit: contain;
 }
 img {
@@ -274,4 +274,7 @@ object-fit: contain;
 .weather-icon {
   display:block;
   margin: 0 auto;
+}
+.weather-forecast-temp-min {
+  opacity: 0.6;
 }
