@@ -61,6 +61,7 @@ function displayCity(event) {
       "src",
       `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
     );
+    displayForecast();
     if (hours > 7 && hours < 21) {
       if (weatherDescriptionElement.innerHTML.includes("ain")) {
         document.getElementById("backgroundImage").style.backgroundImage =
@@ -81,6 +82,7 @@ function displayCity(event) {
         document.getElementById("backgroundImage").style.backgroundImage =
           "url(src/gifs/window-cat-windy.gif)";
       }
+      
     }
   }
 }
@@ -148,6 +150,7 @@ function logLongitudeAndLatitude(coordinates) {
   axios.get(apiUrl).then(showLocation);
 }
 function showLocation(location) {
+  displayForecast();
   let cityAndCountry = document.querySelector(".city-and-country");
   cityAndCountry.innerHTML = `${location.data.name}, ${location.data.sys.country}`;
   let weatherCondition = document.querySelector(".weather-condition");
@@ -157,7 +160,7 @@ function showLocation(location) {
   windElement.innerHTML = windSpeed;
   let humidityElement = document.querySelector("#humidity");
   let humidity = location.data.main.humidity;
-humidityElement.innerHTML = humidity;
+  humidityElement.innerHTML = humidity;
   let dateElement = document.querySelector("#date");
   let iconElement = document.querySelector("#icon")
   dateElement.innerHTML = formatDate(location.data.dt * 1000);
@@ -166,6 +169,7 @@ humidityElement.innerHTML = humidity;
     `http://openweathermap.org/img/wn/${location.data.weather[0].icon}@2x.png`
   );
   iconElement.setAttribute("alt",response.data.weather[0].description);
+  
   if (hours < 7 || hours > 20) {
     document.getElementById("backgroundImage").style.backgroundImage =
       "url(src/gifs/window-cat-night.gif)";
@@ -176,6 +180,31 @@ humidityElement.innerHTML = humidity;
     document.getElementById("backgroundImage").style.backgroundImage =
       "url(src/gifs/window-cat-clouds.gif)";
   }
+
+  
+}
+
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+  let forecastHTML = `<div class="row g-1 justify-content-center weekdays"><div class = "col"></div>`;
+  let days = ["Thu", "Fri","Sat","Sun","Mon"];
+  days.forEach(function(day) {
+    forecastHTML = forecastHTML +
+    `
+            <div class="col">
+              <div class="card text-info" style="background-image: url('src/images/test.jpg')">
+                <div class="card-body p-0">${day}</div>
+                <img
+                  class="card-img-top"
+                  src="src/images/cloudy.png"
+                  alt="Card image cap"
+                /> <div class="card-body p-0 weather-forecast-temperature"><span class="weather-forecast-temp-max">16</span>°/<span class= "weather-forecast-temp-min">11</span>°</div>
+              </div>
+            </div>
+  `;
+});
+  forecastHTML = forecastHTML + `<div class = "col-2"></div></div>`;
+  forecastElement.innerHTML = forecastHTML;
 }
 
 let geolocationButton = document.querySelector(".compass");
