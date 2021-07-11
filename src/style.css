@@ -227,7 +227,9 @@ display: inline-block;
   object-fit: contain;
   opacity: none;
 }
-
+.note{
+  font-size: 0.65vw;
+}
 .extra-data {
   font-size: 0.4vw;
   object-fit: contain;
