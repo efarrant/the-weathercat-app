@@ -95,6 +95,7 @@ function fahrenheitConverter() {
   fahrenheitButton.style.color = "yellow";
   fahrenheitButton.disabled = true;
   let celsiusButton = document.querySelector(".celsius");
+  celsiusButton.style.color = "white";
   celsiusButton.disabled = false;
 }
 
@@ -106,6 +107,7 @@ function celsiusConverter() {
   celsiusButton.style.color = "yellow";
   celsiusButton.disabled = true;
   let fahrenheitButton = document.querySelector(".fahrenheit");
+  fahrenheitButton.style.color="white";
   fahrenheitButton.disabled = false;
 }
 
