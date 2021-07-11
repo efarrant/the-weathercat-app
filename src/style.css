@@ -277,7 +277,7 @@ object-fit: contain;
   text-decoration: none;
   background-color:none;
   font-weight: bold;
-  font-size: 0.9vw;
+  font-size: 0.85vw;
 }
 .weather-icon {
   display:block;
