@@ -157,22 +157,25 @@ function showLocation(location) {
 }
 
 function displayForecast(response) {
+  let forecast = response.data.daily;
   // console.log(response.data.daily);
   let forecastElement = document.querySelector("#forecast");
   let forecastHTML = `<div class="row g-1 justify-content-center weekdays"><div class = "col"></div>`;
-  let days = ["Thu", "Fri", "Sat", "Sun", "Mon"];
-  days.forEach(function (day) {
+  
+  forecast.forEach(function (forecastDay) {
+    console.log(forecastDay);
     forecastHTML =
       forecastHTML +
       `
             <div class="col">
               <div class="card text-info" style="background-image: url('src/images/test.jpg')">
-                <div class="card-body p-0">${day}</div>
+                <div class="card-body p-0">${forecastDay.dt}</div>
                 <img
                   class="card-img-top"
-                  src="src/images/cloudy.png"
+                  src="http://openweathermap.org/img/wn/${forecastDay.weather[0].icon}@2x.png"
                   alt="Card image cap"
-                /> <div class="card-body p-0 weather-forecast-temperature"><span class="weather-forecast-temp-max">16</span>°/<span class= "weather-forecast-temp-min">11</span>°</div>
+                /> <div class="card-body p-0 weather-forecast-temperature"><span class="weather-forecast-temp-max">${forecastDay.temp.max}
+                </span>°/<span class= "weather-forecast-temp-min">${forecastDay.temp.min}</span>°</div>
               </div>
             </div>
   `;
