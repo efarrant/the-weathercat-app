@@ -61,7 +61,7 @@ function displayCity(event) {
       "src",
       `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
     );
-    displayForecast();
+    getForecast(response.data.coord);
     if (hours > 7 && hours < 21) {
       if (weatherDescriptionElement.innerHTML.includes("ain")) {
         document.getElementById("backgroundImage").style.backgroundImage =
@@ -150,7 +150,7 @@ function logLongitudeAndLatitude(coordinates) {
   axios.get(apiUrl).then(showLocation);
 }
 function showLocation(location) {
-  displayForecast();
+  getForecast(location.data.coord);
   let cityAndCountry = document.querySelector(".city-and-country");
   cityAndCountry.innerHTML = `${location.data.name}, ${location.data.sys.country}`;
   let weatherCondition = document.querySelector(".weather-condition");
@@ -162,7 +162,8 @@ function showLocation(location) {
   let humidity = location.data.main.humidity;
   humidityElement.innerHTML = humidity;
   let dateElement = document.querySelector("#date");
-  let iconElement = document.querySelector("#icon")
+  let iconElement = document.querySelector("#icon");
+  
   dateElement.innerHTML = formatDate(location.data.dt * 1000);
   iconElement.setAttribute(
     "src",
@@ -184,7 +185,8 @@ function showLocation(location) {
   
 }
 
-function displayForecast() {
+function displayForecast(response) {
+  console.log(response.data.daily);
   let forecastElement = document.querySelector("#forecast");
   let forecastHTML = `<div class="row g-1 justify-content-center weekdays"><div class = "col"></div>`;
   let days = ["Thu", "Fri","Sat","Sun","Mon"];
@@ -205,6 +207,12 @@ function displayForecast() {
 });
   forecastHTML = forecastHTML + `<div class = "col-2"></div></div>`;
   forecastElement.innerHTML = forecastHTML;
+}
+
+function getForecast(coordinates) {
+  let apiKey = "4d25fa39d39f9d90630ef9306854c84f";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayForecast);
 }
 
 let geolocationButton = document.querySelector(".compass");
