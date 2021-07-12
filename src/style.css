@@ -221,9 +221,8 @@ margin-left: 1vw;
   margin: 0 auto;
 
   z-index: 99;
-  width: 2.4vw;
+  max-width: 2vw;
   padding-bottom: 1.5vw;
-  padding-left:0.5vw;
 }
 .compass:hover {
   cursor: pointer;
