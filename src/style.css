@@ -86,7 +86,7 @@ input {
   border: 2px inset #f8f2da;
   background: white;
   opacity: 0.4;
-
+  max-width: 9vw;
 
 
   z-index: 99;
@@ -148,11 +148,7 @@ button {
   position: relative;
   padding-left: 2vw;
   margin-right: none;
-
-}
-#input-city {
-  object-fit: contain;
-  max-width: 8vw;
+  
 }
 .fahrenheit:hover {
   color: yellow;
