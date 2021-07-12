@@ -139,7 +139,7 @@ if (hours < 7 || hours > 21) {
     "url(src/gifs/window-cat-night.gif)";
 }
 
-document.addEventListener("DOMContentLoaded", getCurrentPosition());
+document.addEventListener("DOMContentLoaded", getCurrentPosition);
 
 function getCurrentPosition() {
   navigator.geolocation.getCurrentPosition(logLongitudeAndLatitude);
