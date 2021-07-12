@@ -58,10 +58,13 @@ function showTemperature(response) {
   dateElement.innerHTML = formatDate(response.data.dt * 1000);
   iconElement.setAttribute(
     "src",
-    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+    `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
+  console.log(weatherDescriptionElement);
   getForecast(response.data.coord);
+  console.log(hours);
   if (hours > 7 && hours < 21) {
+    
     if (weatherDescriptionElement.innerHTML.includes("ain")) {
       document.getElementById("backgroundImage").style.backgroundImage =
         "url(src/gifs/window-cat-rain.gif)";
@@ -134,7 +137,7 @@ let celsius = document.querySelector(".celsius");
 celsius.disabled = true;
 celsius.addEventListener("click", celsiusConverter);
 
-if (hours < 7 || hours > 21) {
+if (hours < 7 || hours > 23) {
   document.getElementById("backgroundImage").style.backgroundImage =
     "url(src/gifs/window-cat-night.gif)";
 }
