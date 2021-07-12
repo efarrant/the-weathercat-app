@@ -283,6 +283,9 @@ object-fit: contain;
   display:block;
   margin: 0 auto;
 }
+.weather-forecast-temperature {
+  font-size: 0.8vw;
+}
 .weather-forecast-temp-min {
   opacity: 0.6;
 }
