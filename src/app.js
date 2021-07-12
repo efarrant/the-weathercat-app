@@ -63,7 +63,7 @@ function showTemperature(response) {
   console.log(weatherDescriptionElement);
   getForecast(response.data.coord);
   console.log(hours);
-  if (hours > 7 && hours < 21) {
+  if (hours > 7 && hours <= 21) {
     
     if (weatherDescriptionElement.innerHTML.includes("ain")) {
       document.getElementById("backgroundImage").style.backgroundImage =
@@ -87,6 +87,9 @@ function showTemperature(response) {
       document.getElementById("backgroundImage").style.backgroundImage =
         "url(src/gifs/window-cat-sunny.gif)";
     }
+  } else {
+    document.getElementById("backgroundImage").style.backgroundImage =
+      "url(src/gifs/window-cat-night.gif)";
   }
 }
 
@@ -137,10 +140,7 @@ let celsius = document.querySelector(".celsius");
 celsius.disabled = true;
 celsius.addEventListener("click", celsiusConverter);
 
-if (hours < 7 || hours > 23) {
-  document.getElementById("backgroundImage").style.backgroundImage =
-    "url(src/gifs/window-cat-night.gif)";
-}
+
 
 document.addEventListener("DOMContentLoaded", getCurrentPosition());
 
