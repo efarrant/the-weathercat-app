@@ -152,7 +152,7 @@ button {
 }
 #input-city {
   object-fit: contain;
-  max-width: 8vw;
+  max-width: 6.5vw;
 }
 .fahrenheit:hover {
   color: yellow;
