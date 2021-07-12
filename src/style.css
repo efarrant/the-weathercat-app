@@ -88,7 +88,6 @@ input {
   opacity: 0.4;
   max-width: 9vw;
 
-
   z-index: 99;
 }
 br {
@@ -137,11 +136,10 @@ button {
   
 }
 .temperature {
-  font-size: 5.9vw;
+  font-size: 5.7vw;
   text-align: right;
   line-height: 85%;
   text-shadow: -1px 0 rgb(143, 139, 139,0.4), 0 1px rgb(143, 139, 139,0.4), 0 -1px rgb(143, 139, 139,0.4);
-  margin-left: 0.5vw;
 }
 .degrees {
   font-size: 1.5vw;
@@ -165,28 +163,25 @@ button {
   color: yellow;
 }
 .city-and-country {
-  font-size: 2.2vw;
+  font-size: 2vw;
   text-shadow: -1px 0 rgb(87, 86, 86, 0.2), 0 1px rgb(87, 86, 86, 0.2), 1px 0 rgb(87, 86, 86, 0.2), 0 -1px rgb(87, 86, 86, 0.2);
  padding-left: 0.4vw;
  padding-top: none;
  text-transform: capitalize;
  line-height: 95%;
- margin-left: 1vw;
 }
 .date-today {
-  font-size: 1.2vw;
+  font-size: 1vw;
   text-shadow: -1px 0 rgb(87, 86, 86, 0.2), 0 1px rgb(87, 86, 86, 0.2), 1px 0 rgb(87, 86, 86, 0.2), 0 -1px rgb(87, 86, 86, 0.2);
 padding-left: 0.4vw;
-margin-left: 1vw;
 }
 
 .weather-condition {
-  font-size: 1.4vw;
+  font-size: 1.2vw;
   text-shadow: -1px 0 rgb(87, 86, 86, 0.2), 0 1px rgb(87, 86, 86, 0.2), 1px 0 rgb(87, 86, 86, 0.2), 0 -1px rgb(87, 86, 86, 0.2);
 padding-left: 0.4vw;
 line-height: 40%;
 display: inline-block;
-margin-left: 1vw;
 }
 .weather-condition:first-letter {
   text-transform: capitalize;
@@ -218,7 +213,6 @@ margin-left: 1vw;
 
   z-index: 99;
   max-width: 2vw;
-  padding-bottom: 2vw;
 }
 .compass:hover {
   cursor: pointer;
